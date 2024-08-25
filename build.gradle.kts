@@ -16,12 +16,12 @@ repositories {
 dependencies {
     api("org.jetbrains:annotations-java5:24.1.0")
     compileOnly("io.papermc.paper:paper-api:1.18.2-R0.1-SNAPSHOT")
-    compileOnly("net.countercraft:movecraft:8.0.0_beta-5_dev-2")
+    compileOnly("net.countercraft:movecraft:+")
     compileOnly("net.countercraft.movecraft.combat:movecraft-combat:+")
 }
 
 group = "net.countercraft.movecraft"
-version = "1.0.0_gradle"
+version = "1.0.1"
 description = "Movecraft-Overheat"
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
@@ -51,7 +51,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/drfiveminusmint/movecraft-overheat")
+            url = uri("https://maven.pkg.github.com/apdevteam/movecraft-overheat")
             credentials {
                 username = System.getenv("GITHUB_ACTOR")
                 password = System.getenv("GITHUB_TOKEN")
