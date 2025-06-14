@@ -41,7 +41,7 @@ public class SurfaceExplosionDisaster implements Disaster {
                 }
             }
             if (!success) continue;
-            TNTPrimed bomb = (TNTPrimed)craft.getWorld().spawnEntity(location.toBukkit(craft.getWorld()), EntityType.PRIMED_TNT);
+            TNTPrimed bomb = (TNTPrimed) craft.getWorld().spawnEntity(location.toBukkit(craft.getWorld()), EntityType.TNT);
             bomb.setFuseTicks(0);
             bomb.setIsIncendiary(true);
             currentBombs++;

@@ -1,8 +1,7 @@
 plugins {
     `java-library`
     `maven-publish`
-    id("io.github.0ffz.github-packages") version "1.2.1"
-    id("io.papermc.hangar-publish-plugin") version "0.1.2"
+    id("io.github.apdevteam.github-packages") version "1.2.2"
 }
 
 repositories {
@@ -15,7 +14,7 @@ repositories {
 
 dependencies {
     api("org.jetbrains:annotations-java5:24.1.0")
-    compileOnly("io.papermc.paper:paper-api:1.18.2-R0.1-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:1.20.6-R0.1-SNAPSHOT")
     compileOnly("net.countercraft:movecraft:+")
     compileOnly("net.countercraft.movecraft.combat:movecraft-combat:+")
 }
@@ -23,7 +22,7 @@ dependencies {
 group = "net.countercraft.movecraft"
 version = "1.0.1"
 description = "Movecraft-Overheat"
-java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
 tasks.jar {
     archiveBaseName.set("Movecraft-Overheat")
